@@ -1,0 +1,176 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Presentación con Beamer]{Número Pi}
+\author[Oscar Andrés Díaz Sánchez]{Oscar Andrés Díaz Sánchez}
+\date[25-03-2014]{25 de marzo de 2014}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+%\usetheme{Antibes}
+%\usetheme{tree}
+%\usetheme{classic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+  %\includegraphics[width=0.15\textwidth]{img/ullesc.png}
+  \hspace*{7.0cm}
+  %\includegraphics[width=0.16\textwidth]{img/fmatesc.png}
+  \titlepage
+
+  \begin{small}
+    \begin{center}
+     Facultad de Matemáticas \\
+     Universidad de La Laguna
+    \end{center}
+  \end{small}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Índice}  
+  \tableofcontents[pausesections]
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Primera Sección}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Primera Sección}
+
+\begin{definicion}
+\alert{El número pi}~\cite{wiki} es la relación entre la longitud de una circunferencia y su diámetro, en geometría euclidiana. Es un número irracional y una de las constantes matemáticas más importantes. Se emplea frecuentemente en matemáticas, física e ingeniería. El valor numérico de pi, truncado a sus primeras cifras, es el siguiente:
+\begin{center}
+   $\pi \approx 3,14159265358979323846 \; \dots $
+\end{center}
+\end{definicion}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Segunda Sección}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Segunda Sección}
+
+\begin{block}{Ejemplo}
+  \begin{itemize}
+  \item
+    $S = \pi r^2 \simeq \left ( \frac{8}{9} \cdot d \right )^2 = \frac{64}{81} d^2 = \frac{64}{81} \left(4 r^2\right) $
+  \pause
+
+  \item
+    $\pi \simeq \frac{256}{81} = 3{,}16049 \ldots $
+  \pause
+
+  \item
+    $\pi \approx 3 + \frac{1}{8} = 3,125 $
+  \pause
+  
+  \item
+    $
+    \arcsin {x} = x + \frac{1}{2} \cdot \frac {x^3}{3} + \frac{1 \cdot 3}{2\cdot 4} \cdot \frac {x^5}{5} + \frac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6} \cdot \frac{x^7}{7} + \ldots $
+
+  \end{itemize}
+\end{block}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Ejercicios}
+
+\subsection{Una subsección}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Título de la diapositiva}
+
+Texto de la diapositiva
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Creación de diapositivas}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Diapositivas}
+
+\begin{definition}
+  Un ejemplo de definición
+\end{definition}
+
+\begin{example}
+  \begin{itemize}
+    \item <1-> Practica\pause
+    \item <2-> de \pause
+    \item <3-> Beamer \pause
+    \item <4-> de \alert{Tecnicas Experimentales}~\cite{guia}   
+  \end{itemize}
+\end{example}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Otra subseccion}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Este es otro Título}
+
+\begin{definicion}
+  Otra definición 
+\end{definicion}
+
+\begin{ejemplo}
+  \begin{enumerate}
+    \item
+      Primero
+      \pause
+
+    \item
+      Segundo 
+
+  \end{enumerate}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Bibliografía}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[Wikipedia]{wiki}  
+    El número pi 
+    {\small $http://es.wikipedia.org/wiki/Numero$ $\_$ $pi$}
+
+    \beamertemplatebookbibitems
+    \bibitem[Campus Virtual, 2014]{guia}  
+    Campus Virtual. 
+    (2014) 
+    {\small $http://campusvirtual.ull.es/1314/pluginfile.php/197727/mod$ $\_$ $resource/content/2/p11.pdf$}
+
+  \end{thebibliography}
+\end{frame}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\end{document}
